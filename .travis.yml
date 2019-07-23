@@ -1,12 +1,12 @@
 language: node_js
 
-#install: 
-  #- npm install -g @argdown/cli
+install: 
+  - npm install -g @argdown/cli
   
 script:
   - mkdir out
-  - npx @argdown/cli map -f svg abortion.argdown out
-  - npx @argdown/cli html abortion.argdown
+  - argdown map -f svg abortion.argdown out
+  - argdown html abortion.argdown
   - mv html/argdown.css out/argdown.css
   - cat html/top.html > out/index.html
   - cat out/abortion.html >> out/index.html
