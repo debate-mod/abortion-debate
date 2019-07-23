@@ -1,0 +1,8 @@
+{
+    "selection" : {
+        "excludeDisconnected": false
+    },
+    "html": {
+        "headless": true
+    }
+}
